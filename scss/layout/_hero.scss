@@ -1,0 +1,40 @@
+.hero{
+  @include flex(flex, column);
+  padding: 2em 0;
+  p{
+    @extend %centered;
+    width: 90%;
+    align-self: center;
+    @media ($brk-narrow){
+    @include text(1.2em, 1.6);
+    text-align: left;
+    margin-top: 0;
+    margin-left: 0;
+    @media ($brk-wide){
+        align-self: flex-start;
+        margin-right:2em;
+    }
+  }
+  }
+  @media ($brk-narrow){
+    @include flex(null, row);
+    width: 90%;
+    margin:auto;
+  }
+}
+.profile-picture{
+  align-self: center;
+  width: 200px;
+    @media ($brk-narrow){
+      width:auto;
+      flex: 1;
+      order: 2;
+      max-width: 250px;
+  }
+  @media ($brk-wide){
+      width:auto;
+      flex: 1;
+      order: 2;
+      max-width: 100%;
+  }
+}

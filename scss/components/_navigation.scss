@@ -1,0 +1,20 @@
+.logo{
+  align-self: center;
+}
+.logo a {
+    color: $color-prim;
+}
+.nav a {
+  display: block;
+  @include text(1.125em, $color: $color-link-default);
+  @extend %centered;
+  padding: .4em;
+  background-color: $white;
+  margin: .2em .8em;
+  @media ($brk-narrow){
+    background-color:transparent;
+  }
+}
+.nav a:hover{
+  color: $color-prim;
+}

@@ -1,0 +1,39 @@
+
+// Descriptive color variables
+
+$white : #fff;
+$black : #000;
+$grey: #808080;
+$emperor : #525252;
+$tundora : #4A4A4A;
+$alabaster : #fafafa;
+$carnation : #F4645F;
+// Functional color variables
+
+$color-prim : $carnation;
+$color-sec : $emperor;
+
+$color-text-light : $grey;
+$color-text-base : $emperor;
+
+$color-border-light : lighten($grey, 5%);
+$color-border-dark  : $emperor;
+$color-border-top  : $carnation;
+
+$color-link-default : $tundora;
+$color-link-visited : $emperor;
+
+$color-shadow       : rgba($black,.8);
+$color-body         : $alabaster;
+
+// Font stacks
+
+$stack-sans-serif : Helvetica, Arial, sans-serif;
+$stack-source : 'Source Sans Pro', $stack-sans-serif;
+$stack-miriam : 'Miriam Libre', $stack-sans-serif;
+$stack-gloria : 'Gloria Hallelujah', $stack-sans-serif;
+
+// media query breakpoints
+
+$brk-narrow : 'min-width: 768px';
+$brk-wide : 'min-width: 1024px';

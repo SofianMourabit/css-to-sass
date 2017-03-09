@@ -1,0 +1,30 @@
+.name{
+  color: $color-prim;
+  font-weight:bold;
+}
+.footer-links{
+  display:none;
+      @media ($brk-narrow){
+      @include flex(flex);
+      li{
+        padding-left:2em;
+        align-self: center;
+      }
+    }
+}
+a.flywheel {
+    @extend %centered;
+    padding: .5em 0;
+    text-transform:uppercase;
+    @media ($brk-narrow){
+      display:none;
+    }
+}
+.main-footer{
+  @include flex(flex, $content: space-between);
+  width: 90%;
+  margin:auto;
+  @extend %t-border;
+;
+  padding: 1em 0;
+}

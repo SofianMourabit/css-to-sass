@@ -1,0 +1,17 @@
+// Center text
+
+%centered {
+  text-align: center;
+}
+
+// Top Border
+
+%t-border {
+  border-top: 7px solid $color-border-top;
+}
+
+// Flex row
+
+%flex-row{
+  flex-direction: row;
+}

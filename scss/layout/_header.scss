@@ -1,0 +1,15 @@
+.main-header, .nav{
+  @include flex(flex, column);
+  @media($brk-wide) {
+    @include flex($direction: row, $content: space-around);
+  }
+}
+.main-header{
+  @extend %t-border;
+}
+
+.nav{
+  @media ($brk-narrow){
+    @include flex($direction: row, $self: center);
+  }
+}
