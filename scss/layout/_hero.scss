@@ -1,5 +1,5 @@
 .hero{
-  @include flex(flex, column);
+  @include flexbox(flex, column);
   padding: 2em 0;
   p{
     @extend %centered;
@@ -17,7 +17,7 @@
   }
   }
   @media ($brk-narrow){
-    @include flex(null, row);
+    @include flexbox(null, row);
     width: 90%;
     margin:auto;
   }
@@ -27,14 +27,12 @@
   width: 200px;
     @media ($brk-narrow){
       width:auto;
-      flex: 1;
-      order: 2;
+      @include flex($order: 2);
       max-width: 250px;
   }
   @media ($brk-wide){
       width:auto;
-      flex: 1;
-      order: 2;
+      @include flex($order: 2);
       max-width: 100%;
   }
 }

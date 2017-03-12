@@ -1,11 +1,10 @@
 .name{
-  color: $color-prim;
-  font-weight:bold;
+  @include text($color: $color-prim, $weight: bold);
 }
 .footer-links{
   display:none;
       @media ($brk-narrow){
-      @include flex(flex);
+      @include flexbox(flex);
       li{
         padding-left:2em;
         align-self: center;
@@ -21,10 +20,9 @@ a.flywheel {
     }
 }
 .main-footer{
-  @include flex(flex, $content: space-between);
+  @include flexbox(flex, $content: space-between);
   width: 90%;
   margin:auto;
   @extend %t-border;
-;
   padding: 1em 0;
 }

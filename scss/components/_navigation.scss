@@ -2,7 +2,7 @@
   align-self: center;
 }
 .logo a {
-    color: $color-prim;
+  @include text($color: $color-prim);
 }
 .nav a {
   display: block;
@@ -16,5 +16,5 @@
   }
 }
 .nav a:hover{
-  color: $color-prim;
+  @include text($color: $color-prim);
 }

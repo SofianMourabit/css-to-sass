@@ -1,7 +1,7 @@
 .main-header, .nav{
-  @include flex(flex, column);
+  @include flexbox(flex, column);
   @media($brk-wide) {
-    @include flex($direction: row, $content: space-around);
+    @include flexbox($direction: row, $content: space-around);
   }
 }
 .main-header{
@@ -10,6 +10,6 @@
 
 .nav{
   @media ($brk-narrow){
-    @include flex($direction: row, $self: center);
+    @include flexbox($direction: row, $self: center);
   }
 }

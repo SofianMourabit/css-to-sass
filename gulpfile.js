@@ -18,7 +18,7 @@ gulp.task('sass:watch', function () {
   gulp.watch('scss/**/*.scss', ['compileSass']);
 });
 
-gulp.task('webserver',['sass:watch'], function() {
+gulp.task('webserver',['compileSass','sass:watch'], function() {
   gulp.src('./')
   .pipe(server({
     defaultFile: 'index.html',

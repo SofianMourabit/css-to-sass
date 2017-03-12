@@ -17,14 +17,14 @@ ul {
 }
 p {
   @extend %centered;
-  color: $color-text-light;
+  @include text($color: $color-text-light);
   margin: 1em;
 }
 h1,
 h2,
 h3,
 a {
-  color: $color-sec;
+  @include text($color: $color-sec);
   font-family: $stack-miriam;
   @extend %centered;
 }
@@ -35,7 +35,7 @@ h3,
 }
 a {
   text-decoration: none;
-  font-weight: bold;
+  @include text($weight: bold);
 }
 span {
     display: block;

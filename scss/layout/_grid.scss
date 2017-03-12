@@ -3,11 +3,11 @@
 }
 .portfolio{
   @media ($brk-narrow){
-    @include flex(flex, row, wrap);
+    @include flexbox(flex, row, wrap);
     margin:auto;
     width: 90%;
     h3{
-      flex:1 0 100%;
+      @include flex(1, 0, 100%);
     }
   }
 }
@@ -16,44 +16,43 @@
 }
 .contact p{
   @media ($brk-wide){
-  width: 50%;
-  margin: auto;
-  padding-bottom: 2em;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 2em;
   }
 }
 .skills, .skill-list {
-  @include flex(flex, column);
+  @include flexbox(flex, column);
   width: 90%;
   margin: auto;
 }
 .skill-list {
-    flex: 1 0 30%;
-    text-align: center;
-   h3{
-     margin-top: 0;
-   }
+  @include flex(1, 0, 30%);
+  text-align: center;
+  h3{
+    margin-top: 0;
+  }
 }
 img.workplace {
-    height: 250px;
-    flex: 1 0 30%;
-    justify-content: space-between;
-    align-content: space-between;
-    order: 2;
-    padding-left: 2em;
+  height: 250px;
+  @include flex(1, 0, 30%, 2);
+  justify-content: space-between;
+  align-content: space-between;
+  padding-left: 2em;
 }
 .skills{
-  @include flex(flex, column);
-   @media ($brk-narrow){
-     @include flex($direction: row, $wrap: wrap);
-     h2{
-      flex: 1 0 100%;
+  @include flexbox(flex, column);
+  @media ($brk-narrow){
+    @include flexbox($direction: row, $wrap: wrap);
+    h2{
+      @include flex(1, 0, 100%);
       text-align: center;
     }
-   }
+  }
   ul{
     align-self: center;
     i {
-      color: $color-prim;
+      @include text($color: $color-prim);
       margin-right: 1em;
     }
     li{
